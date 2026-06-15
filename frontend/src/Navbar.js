@@ -4,7 +4,7 @@ function Navbar() {
     <div className="container">
       <nav className="navbar navbar-expand-lg border-bottom" style={{ backgroundColor: "#fff" }}>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
             <img src="/media/images/images/nivesh_nagar_logo.svg" alt="nivesh_nagar" height="100" />
           </a>
           <button
@@ -32,7 +32,7 @@ function Navbar() {
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
