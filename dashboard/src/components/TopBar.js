@@ -26,7 +26,7 @@ function TopBar() {
   const handleLogout = () => {
     localStorage.removeItem("userName");
     localStorage.removeItem("token");
-    window.location.href = "/login";
+  window.location.href = "https://nivesh-nagar-frontend.vercel.app/login";
   };
 
   return (
