@@ -11,7 +11,7 @@ const handleLogin = () => {
     .then((res) => {
       const token = res.data.token;
       const name = res.data.name;
-      window.location.href = `http://localhost:3000/?name=${encodeURIComponent(name)}&token=${encodeURIComponent(token)}`;
+     window.location.href = `https://nivesh-nagar-dashboard.vercel.app/?name=${encodeURIComponent(name)}&token=${encodeURIComponent(token)}`;
     })
     .catch((err) => {
       alert(err.response?.data || "Login failed");
