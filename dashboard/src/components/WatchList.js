@@ -19,7 +19,7 @@ function WatchList() {
 
   const handleOrder = () => {
     const token = localStorage.getItem("token");
-    axios.post("https://nivesh-nagar-backend.onrender.com", {
+    axios.post("https://nivesh-nagar-backend.onrender.com/newOrder", {
       name: modal.stock.name,
       qty: Number(quantity),
       price: Number(modal.stock.price),

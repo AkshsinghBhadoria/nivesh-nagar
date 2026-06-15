@@ -6,7 +6,7 @@ function Positions() {
 
   useEffect(() => {
   const token = localStorage.getItem("token");
-  axios.get("https://nivesh-nagar-backend.onrender.com", {
+  axios.get("https://nivesh-nagar-backend.onrender.com/allPositions", {
     headers: { Authorization: `Bearer ${token}` }
   }).then((res) => {
     setAllPositions(res.data);

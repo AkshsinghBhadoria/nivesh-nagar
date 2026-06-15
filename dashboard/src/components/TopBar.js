@@ -26,7 +26,7 @@ function TopBar() {
   const handleLogout = () => {
     localStorage.removeItem("userName");
     localStorage.removeItem("token");
-    window.location.href = "http://localhost:3001/login";
+    window.location.href = "/login";
   };
 
   return (
