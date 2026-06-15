@@ -6,7 +6,7 @@ function Orders() {
 
  useEffect(() => {
   const token = localStorage.getItem("token");
-  axios.get("http://localhost:3002/allOrders", {
+  axios.get("https://nivesh-nagar-backend.onrender.com", {
     headers: { Authorization: `Bearer ${token}` }
   }).then((res) => {
     setAllOrders(res.data);

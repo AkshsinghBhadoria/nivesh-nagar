@@ -7,7 +7,7 @@ function Signup() {
   const [password, setPassword] = useState("");
 
   const handleSignup = () => {
-    axios.post("http://localhost:3002/signup", { name, email, password })
+    axios.post("https://nivesh-nagar-backend.onrender.com/signup", { name, email, password })
       .then(() => {
         alert("Signup successful! Login karo ab.");
       })

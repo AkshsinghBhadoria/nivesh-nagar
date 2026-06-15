@@ -6,7 +6,7 @@ function Holdings() {
 
  useEffect(() => {
   const token = localStorage.getItem("token");
-  axios.get("http://localhost:3002/allHoldings", {
+  axios.get("https://nivesh-nagar-backend.onrender.com", {
     headers: { Authorization: `Bearer ${token}` }
   }).then((res) => {
     setAllHoldings(res.data);

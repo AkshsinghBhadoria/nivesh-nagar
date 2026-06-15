@@ -7,7 +7,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 const handleLogin = () => {
-  axios.post("http://localhost:3002/login", { email, password })
+  axios.post("https://nivesh-nagar-backend.onrender.com/login", { email, password })
     .then((res) => {
       const token = res.data.token;
       const name = res.data.name;
